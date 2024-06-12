@@ -1,0 +1,40 @@
+.content-table{
+    margin-top:50px;
+    display:flex;
+    flex-direction: column;
+}
+
+.search-table{
+    align-self: flex-end;
+    margin-bottom:10px;
+}
+
+.search-table input{
+    border:1px solid #B1B1B1;
+}
+
+#submit{
+    background-color:#6C99EE;
+    border:1px solid #B1B1B1;
+    color:white;
+    font-weight: bold;
+}
+
+table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0 10px;
+}
+
+td, th{
+    padding:8px;
+}
+
+tr{
+    background-color:white;
+    box-shadow: 4px 4px 2px -1px rgba(0, 0, 0, 0.2);
+}
+
+tr:hover{
+    filter:brightness(95%)
+}

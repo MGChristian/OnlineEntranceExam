@@ -1,11 +1,17 @@
 *{
     padding:0;
     margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+    width:100%;
 }
 
 body{
-    height:100vh;
-    width:100vw;
+    height:100%;
+    width:100%;
 }
 
 .row{
@@ -15,8 +21,7 @@ body{
 
 .nav-bar{
     width:100%;
-    height:6%;
-    position:relative;
+    height:6vh;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
@@ -47,7 +52,7 @@ body{
 
 .nav-square{
     height:100%;
-    width:6vh;
+    max-width:6vh;
     background-color: #6C99EE;
     margin-right:10px;
 }
@@ -59,16 +64,17 @@ body{
 }
 
 .main-content{
-    height:94%;
+    height:94vh;
 }
 
-.main-content .row{
+.main-content .mainrow{
     height:100%;
 }
 
 .main-content .row .col-sm-2{
+    
     color:#4E86F1;
-    height:100%;
+    height:auto;
     padding:10px;
     background-color:white;
     display:flex;
@@ -78,8 +84,9 @@ body{
 }
 
 .main-content .row .col-sm-10{
+    width:100%;
     padding:0;
-    height:100%;
+    height:auto;
     background-color:#F8F8F8;
     display:flex;
     flex-direction: column;

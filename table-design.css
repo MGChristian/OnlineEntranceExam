@@ -2,6 +2,7 @@
     margin-top:50px;
     display:flex;
     flex-direction: column;
+    width:80%;
 }
 
 .search-table{
@@ -20,15 +21,21 @@
     font-weight: bold;
 }
 
-table{
+.table-container{
     width:100%;
+}
+
+table{
     border-collapse:separate;
     border-spacing:0 10px;
 }
 
 td, th{
-    padding:8px;
-
+    padding:8px 8px 8px 12px;
+    max-width: 10vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 tr{
@@ -38,4 +45,29 @@ tr{
 
 tr:hover{
     filter:brightness(95%)
+}
+
+.table-btn{
+    text-align: center;
+}
+
+.views{
+    width:100px;
+    height:30px;
+    border:none;
+    border-radius: 5px;
+    background-color: #6C99EE;
+    font-weight: 600;
+    color:white;
+    text-align: center;
+}
+
+.add-exam{
+    width:100px;
+    height:30px;
+    color:#50B041;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
 }

@@ -28,11 +28,12 @@
 table{
     border-collapse:separate;
     border-spacing:0 10px;
+    width: 100%;
 }
 
 td, th{
     padding:8px 8px 8px 12px;
-    max-width: 10vh;
+    max-width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

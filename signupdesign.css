@@ -8,16 +8,22 @@ body{
 }
 
 .header{
-    height:20vh;
+    height:15vh;
 }
 
 .form{
-    height:60vh;
+    height:70vh;
+}
+
+.form .row{
+    height:100%;
+    padding:0;
+    margin:0;
 }
 
 .form .row .col-sm-6{
     border-radius:5px;
-    height:60vh;
+    height:70vh;
     padding:0;
     display:flex;
     box-shadow: 6px 6px 2px -1px rgba(0, 0, 0, 0.2);

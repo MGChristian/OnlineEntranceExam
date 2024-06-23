@@ -94,6 +94,8 @@ body{
 }
 
 .page-title{
+    display: flex;
+    justify-content: space-between;
     width:90%;
     border-bottom:1px solid #4E86F1;
     margin-top:50px;
@@ -131,4 +133,36 @@ body{
     background-color:#4E86F1;
     border-radius:5px;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.go-back-btn{
+    border:1px solid;
+    padding:12px;
+    background-color:#4E86F1;
+    color:rgb(255, 255, 255);
+    font-weight:500;
+    border-radius:5px;
+}
+
+.box h2 {
+    margin-top: 0;
+    color: #0275d8;
+}
+
+.detail {
+    margin-bottom: 15px;
+}
+
+.detail label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.detail input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
 }

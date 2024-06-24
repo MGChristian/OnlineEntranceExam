@@ -24,14 +24,13 @@
         <div class="row mainrow">
             <div class="col-sm-2">
                 <h6>STUDENTS</h6>
-                <div class="side-nav-btn">MANAGE STUDENTS</div>
+                <a href="manage-student.html"><div class="side-nav-btn">MANAGE STUDENTS</div></a>
                 <hr>
                 <h6>EXAMS</h6>
-                <div class="side-nav-btn">MANAGE EXAMS</div>
+                <a href="manage-exam.html"><div class="side-nav-btn">MANAGE EXAMS</div></a>
                 <hr>
                 <h6>REPORTS</h6>
-                <div class="side-nav-btn">EXAM REPORTS</div><br>
-                <div class="side-nav-btn">FEEDBACKS</div>
+                <a href="exam-report.html"><div class="side-nav-btn">EXAM REPORTS</div><br></a>
             </div>
             <div class="col-sm-10 containers">
                 <div class="exam-container">
@@ -54,19 +53,39 @@
                         </div>
                     </div>
                     <div class="row questions">
+                        <form method="POST">
                         <div class="col-sm-12 exam-questions">
-                            <div>
-                            <img src="#" style="border:1px solid; height:50px; width:50px;">
-                            <p>question 1</p>
+                            <div class="question-desc">
+                                <img src="#" style="border:1px solid; height:50px; width:50px;">
+                                <p>question 1</p>
                             </div>
-                            <div>
+                            <div style="height:100%;">
                                 <p>Question question question?</p>
-                                <input type="radio" class="answers" name="answer" value="">
-                                <input type="radio" class="answers" name="answer" value="">
-                                <input type="radio" class="answers" name="answer" value="">
-                                <input type="radio" class="answers" name="answer" value="">
+                                <div class="answers-align">
+                                    <div class="answers"><div style="border-right:1px solid;"><input type="radio" name="answer" value="#"></div><p>answer1</p></div>
+                                    <div class="answers"><div style="border-right:1px solid;"><input type="radio" name="answer" value="#"></div><p>answer1</p></div>
+                                    <div class="answers"><div style="border-right:1px solid;"><input type="radio" name="answer" value="#"></div><p>answer1</p></div>
+                                    <div class="answers"><div style="border-right:1px solid;"><input type="radio" name="answer" value="#"></div><p>answer1</p></div>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-sm-12 exam-questions">
+                            <div class="question-desc">
+                                <img src="#" style="border:1px solid; height:50px; width:50px;">
+                                <p>question 1</p>
+                            </div>
+                            <div style="height:100%;">
+                                <p>Question question question?</p>
+                                <div class="answers-align">
+                                    <div class="answers"><div style="border-right:1px solid;"><input type="radio" name="answer2" value="#"></div><p>answer1</p></div>
+                                    <div class="answers"><div style="border-right:1px solid;"><input type="radio" name="answer2" value="#"></div><p>answer1</p></div>
+                                    <div class="answers"><div style="border-right:1px solid;"><input type="radio" name="answer2" value="#"></div><p>answer1</p></div>
+                                    <div class="answers"><div style="border-right:1px solid;"><input type="radio" name="answer2" value="#"></div><p>answer1</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-btn"><button type="submit">Submit Answer</button></div>
+                        </form>
                     </div>
                 </div>
             </div>

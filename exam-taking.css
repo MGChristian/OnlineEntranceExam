@@ -28,7 +28,7 @@
 }
 
 .timer{
-    width:200px;
+    width:20vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -62,11 +62,71 @@
     padding:0px 40px 40px 40px;
 }
 
+form{
+    width:100%;
+}
+
 .exam-questions{
     padding:20px;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
     width:100%;
-    height:550px;
+    height:500px;
     background-color: white;
     border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10px;
 }
+
+.question-desc{
+    display:flex;
+    height:20%;
+    margin-bottom:20px;
+}
+
+.answers-align{
+    display:flex;
+    flex-direction: column;
+    height:80%;
+    justify-content: space-evenly;
+}
+
+.answers{
+    display:flex;
+    align-items: center;
+    border:1px solid;
+}
+
+.answers input{
+    height:40px;
+    width:40px;
+    margin:5px;
+}
+
+.answers p{
+    margin:0;
+    padding:0;
+    margin-left:10px;
+}
+
+.submit-btn{
+    padding:5px;
+    height:50px;
+    width:100%;
+}
+
+.submit-btn button{
+    float:right;
+    height:100%;
+    width:20vh;
+    border-radius:5px;
+    border:none;
+    background-color: #4E86F1;
+    font-weight: bolder;
+    color:white;
+}
+
+.submit-btn button:hover{
+    background-color:#6C99EE;
+}
+

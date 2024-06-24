@@ -25,7 +25,7 @@ if(isset($_POST["send"])){
     $mail->isHTML(true);
 
     $mail->Subject = "Student Verification";
-    $mail->Body = "First Name: " . $_POST["fname"] . "<br>" . "Last Name: " . $_POST["lname"]  . "<br>" .  "Middle Name: " . $_POST["mname"]  . "<br>" .  "Birthdate: " . $_POST["bdate"]  . "<br>" .  "Gender: " . $_POST["gender"]  . "<br>" .  "Contact: " . $_POST["contact"]  . "<br>" .  "Address: " . $_POST["address"]  . "<br>" .  "Guardian: " . $_POST["guardian"]  . "<br>" .  "Email: " . $_POST["email"];
+    $mail->Body = "First Name: " . $_POST["fname"]. "<br>" . "Last Name: " . $_POST["lname"]  . "<br>" .  "Middle Name: " . $_POST["mname"]  . "<br>" .  "Birthdate: " . $_POST["bdate"]  . "<br>" .  "Gender: " . $_POST["gender"]  . "<br>" .  "Contact: " . $_POST["contact"]  . "<br>" .  "Address: " . $_POST["address"]  . "<br>" .  "Guardian: " . $_POST["guardian"]  . "<br>" .  "Email: " . $_POST["email"];
 
     $mail->send();
 

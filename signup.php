@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="signupdesign.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/Layout/logo1.png"/>
-    <title>Document</title>
+    <title>Sign Up</title>
 </head>
 <body>
     <div class="header">

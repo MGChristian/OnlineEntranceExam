@@ -21,65 +21,52 @@
                 <div class="left-side">
                     <h5 id="form_label">SIGN IN</h5>
                     <div class="signup">
-                    <form method="post">
-
+                    <form action = "send.php" method="POST">
                         <div class="col-sm-12">
                             <label for="firstname">First name*</label><br>
-                            <input type="text" id="firstname" name="First name">
+                            <input type="text" id="firstname" name="fname" value="" required>
                         </div>
-                         
                         <div class="col-sm-12" id="lmnamestack">
                             <div id="stack1">
                                 <label for="lastname">Last name*</label><br>
-                                <input type="text" id="lastname" name="Last name">
-                            </div>
-                       
+                                <input type="text" id="lastname" name="lname" value="" required>
+                            </div>                       
                             <div id="stack2">
                                  <label for="middlename">Middle name*</label><br>
-                                <input type="text" id="middlename" name="Middle name">
+                                <input type="text" id="middlename" name="mname" value="" required>
                             </div>
-
                         </div>    
-
                         <div class="col-sm-12" id="lmnamestack">
                             <div id="stack1">
                                 <label for="birthdate">Birthdate*</label><br>
-                                <input type="date" id="birthdate" name="Brithdate">
-                            </div>
-                       
+                                <input type="date" id="birthdate" name="bdate" value="" required>
+                            </div>                      
                             <div id="stack2">
                                  <label for="gender">Gender*</label><br>
-                                <input type="text" id="gender" name="Gender">
+                                <input type="text" id="gender" name="gender" value="" required>
                             </div>
-
                         </div>
-
                         <div class="col-sm-12">
                             <label for="contact">Contact*</label><br>
-                            <input type="number" id="contact" name="contact">
+                            <input type="number" id="contact" name="contact" value="" required>
                         </div>
-
                         <div class="col-sm-12">
                             <label for="address">Address*</label><br>
-                            <input type="text" id="address" name="Address">
+                            <input type="text" id="address" name="address" value="" required>
                         </div>    
-                        
                         <div class="col-sm-12">
                             <label for="guardian">Guardian*</label><br>
-                            <input type="text" id="guardian" name="Guardian">
+                            <input type="text" id="guardian" name="guardian" value="" required>
                         </div>
-
                         <div class="col-sm-12">
                             <label for="email">Email*</label><br>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" value="" required>
                         </div>
-
                         <div class="row">                          
                             <div class="col-sm-12" id="submit-button">
-                            <button type="submit">Submit</button>
+                            <button type="submit" name="send">Submit</button>
                             <p >Already have an account? <a href="index.html">Sign In</a></p>
                         </div>
-
                         </div>
                     </form>
                     </div>

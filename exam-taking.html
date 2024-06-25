@@ -44,7 +44,9 @@
                             <div class="timer-sec">
                                 <p>REMAINING TIME:</p>
                                 <div class="timer">
-                                    30:00
+                                    <span id="minutes">00</span>
+                                    <span>:</span>
+                                    <span id="seconds">10</span>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +55,7 @@
                         </div>
                     </div>
                     <div class="row questions">
-                        <form method="POST">
+                        <form method="POST" id="submit-exam">
                         <div class="col-sm-12 exam-questions">
                             <div class="question-desc">
                                 <img src="#" style="border:1px solid; height:50px; width:50px;">
@@ -91,5 +93,6 @@
             </div>
         </div>
     </div>
+    <script src="timer.js"></script>
 </body>
 </html>

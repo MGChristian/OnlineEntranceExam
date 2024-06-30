@@ -212,6 +212,12 @@ body{
     font-size: 14px;
 }
 
+.create-exam2 label, 
+.create-exam2 input{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 .bttns {
     display: flex;
     justify-content: flex-end;
@@ -309,4 +315,31 @@ body{
 
 .publish-button {
     background-color: #2ecc71;
+}
+
+.topper{
+    display: flex;
+    justify-content: center;
+}
+
+.qu{
+    color: #0275d8;
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+}
+
+.add{
+    color:#19af58;
+    font-weight: bold;
+}
+
+.back-area{
+    background-color: #b9b9b9;
+    padding: 200px;
+    margin: 20px;
+}
+
+.cbox{
+    text-align: left;
 }

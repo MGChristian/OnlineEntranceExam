@@ -1,3 +1,22 @@
+<!--
+<?php
+
+session_start();
+
+$server = "localhost";
+$username = "root";
+$password = "";
+$db_name = "pracEntranceExam";
+
+$conn = mysqli_connect($server, $username, $password, $db_name);
+
+if(empty($_SESSION['logged'])){
+    header("location:index.php");
+}
+
+?>
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,10 +44,10 @@
         <div class="row mainrow">
             <div class="col-sm-2">
                 <h6>STUDENTS</h6>
-                <a href="manage-student.html"><div class="side-nav-btn">MANAGE STUDENTS</div></a>
+                <a href="manage-student.php"><div class="side-nav-btn">MANAGE STUDENTS</div></a>
                 <hr>
                 <h6>EXAMS</h6>
-                <a href="manage-exam.html"><div class="side-nav-btn">MANAGE EXAMS</div></a>
+                <a href="manage-exam.php"><div class="side-nav-btn">MANAGE EXAMS</div></a>
                 <hr>
                 <h6>REPORTS</h6>
                 <div class="side-nav-btn">EXAM REPORTS</div><br>
@@ -37,8 +56,9 @@
                 <div class="page-title">
                     <h1>CREATE EXAM</h1>
                 </div><br><br>
+                <div class="name"><b>CREATE A NEW EXAM</b></div>
                 <div class="back">
-                    <div class="name"><b>CREATE A NEW EXAM</b></div><br>
+                    <br>
                     <form>
                         <div class="create-exam1">
                             <label for="exam-name">Exam Name*</label>
@@ -47,8 +67,9 @@
                         <div class="create-exam1">
                             <label for="time-limit">Time Limit*</label>
                             <select id="time-limit" required>
-                                <option value="">Select a category</option>
+                                <option value="">Select Time</option>
                                 <option value="time2">60:00</option>
+                                <option value="time2">90:00</option>
                                 <option value="time3">120:00</option>
                             </select>
                         </div>
@@ -65,7 +86,7 @@
                             <textarea id="description" required></textarea>
                         </div>
                         <div class="bttns">
-                            <a href="manage-exam.html"><button type="button" class="btn cancel">CANCEL</button></a>
+                            <a href="manage-exam.php"><button type="button" class="btn cancel">CANCEL</button></a>
                             <button type="submit" class="btn next">NEXT</button>
                         </div>
                     </form>

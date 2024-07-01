@@ -73,9 +73,29 @@ if(empty($_SESSION['logged'])){
                                 <option value="time3">120:00</option>
                             </select>
                         </div>
+                        <div class="create-exam2">
+                            <label for="course">Course*</label><br>
+                            <input type="checkbox" class="cbox" id="course_BSIT" required>
+                            <label for="course_BSIT">BSIT</label>
+                            <input type="checkbox" class="cbox" id="course_BSCS" required>
+                            <label for="course_BSCS">BSCS</label>
+                            <input type="checkbox" class="cbox" id="course_BSBM" required>
+                            <label for="course_BSBM">BSBM</label>
+                            <input type="checkbox" class="cbox" id="course_BSPSY" required>
+                            <label for="course_BSPSY">BSPSY</label>
+                            <input type="checkbox" class="cbox" id="course_BSBA" required>
+                            <label for="course_BSBA">BSBA</label>
+                        </div>
                         <div class="create-exam1">
                             <label for="category">Category*</label>
-                            <input type="text" id="category" required>
+                            <select id="category" required>
+                                <option value="">Select Category</option>
+                                <option value="logic">Logical</option>
+                                <option value="math">Mathematics</option>
+                                <option value="science">Science</option>
+                                <option value="english">English</option>
+                                <option value="reading">Reading</option>
+                            </select>
                         </div>
                         <div class="create-exam1">
                             <label for="exam-date">Exam Date*</label>

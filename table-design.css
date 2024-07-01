@@ -71,6 +71,7 @@ tr:hover{
     border: none;
     background-color: transparent;
     box-sizing: border-box;
+    float:right;
 }
 
 .view-btn{

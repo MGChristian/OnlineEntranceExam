@@ -165,3 +165,26 @@ body{
     border-radius: 5px;
     background-color: #f0f0f0;
 }
+
+.col-sm-4{
+    margin:0;
+    padding:0;
+}
+
+.blocks{
+    height:10vh;
+}
+
+.blocky1{
+    height:90%;
+    width:90%;
+    background:#F1E14E; 
+    border-radius:5px;
+}
+
+.blocky2{
+    height:90%;
+    width:90%;
+    background:#80E96F;
+    border-radius:5px; 
+}

@@ -212,10 +212,16 @@ body{
     font-size: 14px;
 }
 
+.create-exam2{
+    display:flex;
+    flex-wrap: wrap;
+}
+
 .create-exam2 label, 
 .create-exam2 input{
     margin-bottom: 5px;
     font-weight: bold;
+    margin-left:10px;
 }
 
 .bttns {
@@ -335,9 +341,6 @@ body{
     width:100%;
 }
 
-.answers-design{
-    padding:10px;
-}
 .topper{
     display: flex;
     justify-content: center;
@@ -363,4 +366,20 @@ body{
 
 .cbox{
     text-align: left;
+}
+
+.anws{
+    padding:0;
+    margin:0;
+}
+
+.choose-answers{
+    padding-left:20px;
+    display:flex;
+}
+
+.choose-answers label{
+    padding:0;
+    margin:0;
+    margin-right:5vh;
 }

@@ -16,9 +16,9 @@
             <div class="col-sm-12">
                 <div class="left">
                 <div class="nav-square"><a href="#"><img src="images/Layout/lines.png"></a></div>
-                <a href="Dashboard.html"><img src="images/Layout/logo.png"></a>
+                <a href="Dashboard.php"><img src="images/Layout/logo.png"></a>
                 </div>
-                <div class="nav-log-off"><a href="#"><img src="images/Layout/power-off.png"></a></div>
+                <div class="nav-log-off"><a href="logout.php"><img src="images/Layout/power-off.png"></a></div>
             </div>
         </div>
     </div>
@@ -26,40 +26,40 @@
         <div class="row mainrow">
             <div class="col-sm-2">
                 <h6>STUDENTS</h6>
-                <a href="manage-student.html"><div class="side-nav-btn">MANAGE STUDENTS</div></a>
+                <a href="manage-student.php"><div class="side-nav-btn">MANAGE STUDENTS</div></a>
                 <hr>
                 <h6>EXAMS</h6>
-                <a href="manage-exam.html"><div class="side-nav-btn">MANAGE EXAMS</div></a>
+                <a href="manage-exam.php"><div class="side-nav-btn">MANAGE EXAMS</div></a>
                 <hr>
                 <h6>REPORTS</h6>
-                <a href="exam-report.html"><div class="side-nav-btn">EXAM REPORTS</div><br></a>
+                <a href="exam-report.php"><div class="side-nav-btn">EXAM REPORTS</div><br></a>
             </div>
             <div class="col-sm-10">
                 <div class="page-title">
                     <h1>EXAM REPORTS</h1>
                 </div>
                 <div class="exam-reporting">
-                    <a href="exam-report-clicked.html">
+                    <a href="exam-report-clicked.php">
                         <div class="exam-category">
                             <p>Category || Exam Name</p>
                         </div>
                     </a>
-                    <a href="exam-report-clicked.html">
+                    <a href="exam-report-clicked.php">
                         <div class="exam-category">
                             <p>Category || Exam Name</p>
                         </div>
                     </a>
-                    <a href="exam-report-clicked.html">
+                    <a href="exam-report-clicked.php">
                         <div class="exam-category">
                             <p>Category || Exam Name</p>
                         </div>
                     </a>
-                    <a href="exam-report-clicked.html">
+                    <a href="exam-report-clicked.php">
                         <div class="exam-category">
                             <p>Category || Exam Name</p>
                         </div>
                     </a>
-                    <a href="exam-report-clicked.html">
+                    <a href="exam-report-clicked.php">
                         <div class="exam-category">
                             <p>Category || Exam Name</p>
                         </div>

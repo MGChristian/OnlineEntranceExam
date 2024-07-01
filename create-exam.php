@@ -1,4 +1,4 @@
-<!--
+
 <?php
 
 session_start();
@@ -14,8 +14,13 @@ if(empty($_SESSION['logged'])){
     header("location:index.php");
 }
 
+$categories = "SELECT * FROM Category";
+$categoriesrun = mysqli_query($conn, $categories);
+
+$courses = "SELECT * FROM Courses";
+$coursesrun = mysqli_query($conn, $courses);
+
 ?>
--->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +41,7 @@ if(empty($_SESSION['logged'])){
                 <div class="nav-square"><a href="#"><img src="images/Layout/lines.png"></a></div>
                 <a href="#"><img src="images/Layout/logo.png"></a>
                 </div>
-                <div class="nav-log-off"><a href="#"><img src="images/Layout/power-off.png"></a></div>
+                <div class="nav-log-off"><a href="logout.php"><img src="images/Layout/power-off.png"></a></div>
             </div>
         </div>
     </div>
@@ -59,51 +64,48 @@ if(empty($_SESSION['logged'])){
                 <div class="name"><b>CREATE A NEW EXAM</b></div>
                 <div class="back">
                     <br>
-                    <form>
+                    <form method="POST" action="create-exam-code.php">
                         <div class="create-exam1">
                             <label for="exam-name">Exam Name*</label>
-                            <input type="text" id="exam-name" required>
+                            <input type="text" id="exam-name" name="exam-name" required>
                         </div>
                         <div class="create-exam1">
                             <label for="time-limit">Time Limit*</label>
-                            <select id="time-limit" required>
+                            <select id="time-limit" name="timer" required>
                                 <option value="">Select Time</option>
-                                <option value="time2">60:00</option>
-                                <option value="time2">90:00</option>
-                                <option value="time3">120:00</option>
+                                <option value="60:00">60:00</option>
+                                <option value="90:00">90:00</option>
+                                <option value="120:00">120:00</option>
                             </select>
-                        </div>
-                        <div class="create-exam2">
-                            <label for="course">Course*</label><br>
-                            <input type="checkbox" class="cbox" id="course_BSIT" required>
-                            <label for="course_BSIT">BSIT</label>
-                            <input type="checkbox" class="cbox" id="course_BSCS" required>
-                            <label for="course_BSCS">BSCS</label>
-                            <input type="checkbox" class="cbox" id="course_BSBM" required>
-                            <label for="course_BSBM">BSBM</label>
-                            <input type="checkbox" class="cbox" id="course_BSPSY" required>
-                            <label for="course_BSPSY">BSPSY</label>
-                            <input type="checkbox" class="cbox" id="course_BSBA" required>
-                            <label for="course_BSBA">BSBA</label>
                         </div>
                         <div class="create-exam1">
-                            <label for="category">Category*</label>
-                            <select id="category" required>
-                                <option value="">Select Category</option>
-                                <option value="logic">Logical</option>
-                                <option value="math">Mathematics</option>
-                                <option value="science">Science</option>
-                                <option value="english">English</option>
-                                <option value="reading">Reading</option>
-                            </select>
+                            <?php
+                            echo "<label for='categories'>Category*</label>";
+                            echo "<select id='categories' name='categories' required>";
+                            echo "<option value=''>Select Category</option>";
+                            while($categoriesrow = mysqli_fetch_assoc($categoriesrun)){
+                                echo "<option value='{$categoriesrow['Category_ID']}'>{$categoriesrow['CategoryName']}</option>";
+                            }
+                            echo "</select>";
+                            ?>
+                        </div>
+                        <div class="create-exam1">
+                            <label for="courses[]">Courses*</label>
+                        </div>
+                        <div class="create-exam2">
+                            <?php
+                            while($coursesrow = mysqli_fetch_assoc($coursesrun)){
+                                echo "<label><input type='checkbox' name='courses[]' value='{$coursesrow['Course_ID']}'> {$coursesrow['CourseName']} </label>";
+                            }
+                            ?>
                         </div>
                         <div class="create-exam1">
                             <label for="exam-date">Exam Date*</label>
-                            <input type="date" id="exam-date" required>
+                            <input type="date" id="exam-date" name="date"required>
                         </div>
                         <div class="create-exam1">
                             <label for="description">Description*</label>
-                            <textarea id="description" required></textarea>
+                            <textarea id="description" name="description" required></textarea>
                         </div>
                         <div class="bttns">
                             <a href="manage-exam.php"><button type="button" class="btn cancel">CANCEL</button></a>

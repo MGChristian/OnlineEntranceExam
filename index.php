@@ -61,7 +61,7 @@ if(isset($_POST['std_number']) && isset($_POST['password'])){
                 <div class="left-side">
                     <h5>SIGN IN</h5>
                     <div class="login">
-                    <form method="post">
+                    <form method="post" action="login.php">
                         <div class="row">
                             <div class="col-sm-12">
                             <label for="std_number">Student Number*</label><br>

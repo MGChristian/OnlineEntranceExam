@@ -239,16 +239,19 @@ body{
 .content {
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f0f0f0;
+    background-color: white;
+    margin-bottom:10vh;
 }
 
 .content h2 {
-    margin-bottom: 20px;
+    margin:0;
+    padding:0;
     background-color: #4E86F1;
     color: white;
 }
 
 .exam-details {
+    padding:20px;
     display: flex;
     justify-content: space-between;
 }
@@ -257,8 +260,9 @@ body{
     background: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 48%;
+    height:65vh;
+    overflow-y: scroll;
 }
 
 .exam-info label {
@@ -285,12 +289,14 @@ body{
 
 .questions{
     background-color: rgb(236, 231, 231);
+    display:flex;
+    flex-direction: column;
+    
 }
 
 .buttons {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
+    padding:20px;
+    float:right;
 }
 
 .modify-button, .publish-button {
@@ -309,4 +315,20 @@ body{
 
 .publish-button {
     background-color: #2ecc71;
+}
+
+.question-item{
+    margin-bottom:10px;
+    background-color: white;
+    padding:10px;
+    border-radius:5px;
+}
+
+.answers{
+    display:flex;
+    width:100%;
+}
+
+.answers-design{
+    padding:10px;
 }

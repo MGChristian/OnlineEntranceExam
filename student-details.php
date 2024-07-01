@@ -48,15 +48,15 @@ $studdetsrow = mysqli_fetch_assoc($studdetsrun);
     </div>
     <div class="main-content">
         <div class="row mainrow">
-            <div class="col-sm-2">
+        <div class="col-sm-2">
                 <h6>STUDENTS</h6>
-                <a href="manage-student.php"><div class="side-nav-btn">MANAGE STUDENTS</div></a>
+                <a href="manage-student.php"><div class="side-nav-btn"><img src="images/Layout/user.png" alt="User Icon"> MANAGE STUDENTS</div></a>
                 <hr>
                 <h6>EXAMS</h6>
-                <a href="manage-exam.php"><div class="side-nav-btn">MANAGE EXAMS</div></a>
+                <a href="manage-exam.php"><div class="side-nav-btn"><img src="images/Layout/user.png" alt="User Icon"> MANAGE EXAMS</div></a>
                 <hr>
                 <h6>REPORTS</h6>
-                <a href="exam-report.php"><div class="side-nav-btn">EXAM REPORTS</div><br></a>
+                <a href="exam-report.php"><div class="side-nav-btn"><img src="images/Layout/user.png" alt="User Icon"> EXAM REPORTS</div><br></a>
             </div>
             <div class="col-sm-10">
                 <div class="page-title">
@@ -68,49 +68,49 @@ $studdetsrow = mysqli_fetch_assoc($studdetsrun);
                         <h2>Personal Information</h2>
                         <div class="detail">
                             <label for="fullname">Fullname:</label>
-                            <input type="text" id="fullname" name="fullname" value="<?php echo $studdetsrow['FirstName'] . ' ' . $studdetsrow['MiddleName'] . ' ' . $studdetsrow['LastName'];?>">
+                            <input disabled type="text" id="fullname" name="fullname" value="<?php echo $studdetsrow['FirstName'] . ' ' . $studdetsrow['MiddleName'] . ' ' . $studdetsrow['LastName'];?>">
                         </div>
                         <div class="detail">
                             <label for="birthdate">Birthdate:</label>
-                            <input type="date" id="birthdate" name="birthdate" value = "<?php echo $studdetsrow['Birthdate']?>">
+                            <input disabled type="date" id="birthdate" name="birthdate" value = "<?php echo $studdetsrow['Birthdate']?>">
                         </div>
                         <div class="detail">
                             <label for="Course">Course:</label>
-                            <input type="text" id="Course" name="Course" value = "<?php echo $studdetsrow['CourseName']?>">
+                            <input disabled type="text" id="Course" name="Course" value = "<?php echo $studdetsrow['CourseName']?>">
                         </div>
                         <div class="detail">
                             <label for="sex">Sex:</label>
-                            <input type="text" id="sex" name="sex" value = "<?php echo $studdetsrow['Gender']?>">
+                            <input disabled type="text" id="sex" name="sex" value = "<?php echo $studdetsrow['Gender']?>">
                         </div>
                         <div class="detail">
                             <label for="contact">Contact:</label>
-                            <input type="text" id="contact" name="contact" value = "<?php echo '0' . $studdetsrow['Contact']?>">
+                            <input disabled type="text" id="contact" name="contact" value = "<?php echo '0' . $studdetsrow['Contact']?>">
                         </div>
                         <div class="detail">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" value = "<?php echo $studdetsrow['Email']?>">
+                            <input disabled type="email" id="email" name="email" value = "<?php echo $studdetsrow['Email']?>">
                         </div>
                         <h2>Contact Details</h2>
                         <div class="detail">
                             <label for="address">Address:</label>
-                            <input type="text" id="address" name="address">
+                            <input disabled type="text" id="address" name="address">
                         </div>
                         <div class="detail">
                             <label for="guardian">Guardian:</label>
-                            <input type="text" id="guardian" name="guardian" value = "<?php echo $studdetsrow['Guardian']?>">
+                            <input disabled type="text" id="guardian" name="guardian" value = "<?php echo $studdetsrow['Guardian']?>">
                         </div>
                         <div class="detail">
                             <label for="contact-number">Contact Number:</label>
-                            <input type="text" id="contact-number" name="contact-number" value = "<?php echo '0' . $studdetsrow['GuardianContact']?>">
+                            <input disabled type="text" id="contact-number" name="contact-number" value = "<?php echo '0' . $studdetsrow['GuardianContact']?>">
                         </div>
                         <h2>Portal Account</h2>
                         <div class="detail">
                             <label for="ReferenceNo">ReferenceNo:</label>
-                            <input type="email" id="ReferenceNo" name="ReferenceNo" value = "<?php echo $studdetsrow['ReferenceNo']?>">
+                            <input disabled type="email" id="ReferenceNo" name="ReferenceNo" value = "<?php echo $studdetsrow['ReferenceNo']?>">
                         </div>
                         <div class="detail">
                             <label for="password">Password:</label>
-                            <input type="text" id="password" name="password" value = "<?php echo $studdetsrow['Password']?>">
+                            <input disabled type="text" id="password" name="password" value = "<?php echo $studdetsrow['Password']?>">
                         </div>
                         <br>
                     </div>

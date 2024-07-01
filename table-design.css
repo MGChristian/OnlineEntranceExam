@@ -61,6 +61,7 @@ tr:hover{
     font-weight: 600;
     color:white;
     text-align: center;
+    float:right;
 }
 
 .add-exam{

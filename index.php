@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 session_start();
 
@@ -10,34 +10,25 @@ $db_name = "pracEntranceExam";
 $conn = mysqli_connect($server, $username, $password, $db_name);
 
 if(!empty($_SESSION['logged'])){
-    header("location:dashboard.php");
-}
-
-if(isset($_POST['std_number']) && isset($_POST['password'])){
-    $_SESSION['logged'] = $_POST['std_number'];
-    $referenceno = $_POST['std_number'];
-    $password = $_POST['password'];
-
-    $query = "SELECT ReferenceNo, `Password` FROM Student_Accounts WHERE ReferenceNo = '$referenceno' AND `Password` = '$password'";
+    $studentName = $_SESSION['logged'];
+    $query = "SELECT ReferenceNo FROM Student_Accounts WHERE ReferenceNo = '$studentName'";
     $runquery = mysqli_query($conn, $query);
     if(mysqli_num_rows($runquery) > 0){
-        $acc_type = "SELECT Account_Type FROM Student_Accounts WHERE ReferenceNo = '$referenceno'";
+        $acc_type = "SELECT Account_Type FROM Student_Accounts WHERE ReferenceNo = '$studentName'";
         $checker = mysqli_query($conn, $acc_type);
         $row = mysqli_fetch_assoc($checker);
 
         if($row['Account_Type'] == "admin"){
             header("location:dashboard.php");
         }
-        else{
-            echo "<script> alert('Page Does Not Exists') </script>";
+        elseif($row['Account_Type'] == "student"){
+            header("location:studentdashboard.php");
         }
-    }
-    else{
-        echo "<script> alert('Account Does Not Exists') </script>";
     }
 }
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

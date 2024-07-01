@@ -82,6 +82,21 @@ body{
     z-index: 1;
 }
 
+
+.main-content .row .col-sm-2 .side-nav-btn {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main-content .row .col-sm-2 .side-nav-btn img {
+    width: 25px;
+    height: 22px;
+    margin-left: 1px;
+    margin-bottom: 3px;
+}
+
+
 .main-content .row .col-sm-10{
     width:100%;
     padding:0;

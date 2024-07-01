@@ -5,7 +5,7 @@ session_start();
 $servername = "localhost";
 $username = "root";  // Default XAMPP MySQL username
 $password = "";      // Default XAMPP MySQL password
-$dbname = "exam";    // Your database name
+$dbname = "pracEntranceExam";    // Your database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -20,7 +20,7 @@ $std_number = $_POST['std_number'];
 $password = $_POST['password'];
 
 // Prepare and bind
-$stmt = $conn->prepare("SELECT AccountType FROM login WHERE std_number = ? AND password = ?");
+$stmt = $conn->prepare("SELECT Account_Type FROM student_accounts WHERE ReferenceNo = ? AND `password` = ?");
 $stmt->bind_param("ss", $std_number, $password);
 
 // Execute query
@@ -31,13 +31,15 @@ $stmt->fetch();
 if ($account_type) {
     // Credentials are correct
     if ($account_type == "admin") {
-        header("Location: dashboard.html");
-    } elseif ($account_type == "examinee") {
-        header("Location: s_dashboard.html");
+        $_SESSION['logged'] = $_POST['std_number'];
+        header("Location: dashboard.php");
+    } elseif ($account_type == "student") {
+        $_SESSION['logged'] = $_POST['std_number'];
+        header("Location: studentdashboard.php");
     }
 } else {
     // Invalid credentials
-    echo "<script>alert('Your student number or password is incorrect'); window.location.href = 'index.html';</script>";
+    echo "<script>alert('Your student number or password is incorrect'); window.location.href = 'index.php';</script>";
 }
 
 // Close connection

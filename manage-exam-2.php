@@ -31,6 +31,7 @@ $tablequestionrun = mysqli_query($conn, $tablequestion);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="create-exam.css">
     <link rel="stylesheet" href="table-design.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/Layout/logo1.png"/>
@@ -49,15 +50,15 @@ $tablequestionrun = mysqli_query($conn, $tablequestion);
     </div>
     <div class="main-content">
         <div class="row mainrow">
-            <div class="col-sm-2">
+        <div class="col-sm-2">
                 <h6>STUDENTS</h6>
-                <a href="manage-student.php"><div class="side-nav-btn">MANAGE STUDENTS</div></a>
+                <a href="manage-student.php"><div class="side-nav-btn"><img src="images/Layout/user.png" alt="User Icon"> MANAGE STUDENTS</div></a>
                 <hr>
                 <h6>EXAMS</h6>
-                <a href="manage-exam.php"><div class="side-nav-btn">MANAGE EXAMS</div></a>
+                <a href="manage-exam.php"><div class="side-nav-btn"><img src="images/Layout/user.png" alt="User Icon"> MANAGE EXAMS</div></a>
                 <hr>
                 <h6>REPORTS</h6>
-                <div class="side-nav-btn">EXAM REPORTS</div><br>
+                <a href="exam-report.php"><div class="side-nav-btn"><img src="images/Layout/user.png" alt="User Icon"> EXAM REPORTS</div><br></a>
             </div>
             <div class="col-sm-10">
                 <div class="page-title">

@@ -73,9 +73,9 @@ $coursesrun = mysqli_query($conn, $courses);
                             <label for="time-limit">Time Limit*</label>
                             <select id="time-limit" name="timer" required>
                                 <option value="">Select Time</option>
-                                <option value="60:00">60:00</option>
-                                <option value="90:00">90:00</option>
-                                <option value="120:00">120:00</option>
+                                <option value="60">60:00</option>
+                                <option value="90">90:00</option>
+                                <option value="120">120:00</option>
                             </select>
                         </div>
                         <div class="create-exam1">
@@ -102,6 +102,10 @@ $coursesrun = mysqli_query($conn, $courses);
                         <div class="create-exam1">
                             <label for="exam-date">Exam Date*</label>
                             <input type="date" id="exam-date" name="date"required>
+                        </div>
+                        <div class="create-exam1">
+                            <label for="score-date">Score Release Date*</label>
+                            <input type="date" id="score-date" name="scoredate"required>
                         </div>
                         <div class="create-exam1">
                             <label for="description">Description*</label>

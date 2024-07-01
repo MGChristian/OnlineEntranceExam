@@ -18,7 +18,7 @@ if(!empty($_SESSION['studentref'])){
 }
 
 
-$tablestudents = "SELECT * FROM Student_Accounts INNER JOIN Courses ON Student_Accounts.Course_ID = Courses.Course_ID";
+$tablestudents = "SELECT * FROM Student_Accounts INNER JOIN Courses ON Student_Accounts.Course_ID = Courses.Course_ID WHERE Account_Type='Student'";
 $tablestudentsrun = mysqli_query($conn, $tablestudents);
 
 ?>
@@ -48,15 +48,15 @@ $tablestudentsrun = mysqli_query($conn, $tablestudents);
     </div>
     <div class="main-content">
         <div class="row mainrow">
-            <div class="col-sm-2">
+        <div class="col-sm-2">
                 <h6>STUDENTS</h6>
-                <a href="manage-student.php"><div class="side-nav-btn">MANAGE STUDENTS</div></a>
+                <a href="manage-student.php"><div class="side-nav-btn"><img src="images/Layout/user.png" alt="User Icon"> MANAGE STUDENTS</div></a>
                 <hr>
                 <h6>EXAMS</h6>
-                <a href="manage-exam.php"><div class="side-nav-btn">MANAGE EXAMS</div></a>
+                <a href="manage-exam.php"><div class="side-nav-btn"><img src="images/Layout/user.png" alt="User Icon"> MANAGE EXAMS</div></a>
                 <hr>
                 <h6>REPORTS</h6>
-                <a href="exam-report.php"><div class="side-nav-btn">EXAM REPORTS</div><br></a>
+                <a href="exam-report.php"><div class="side-nav-btn"><img src="images/Layout/user.png" alt="User Icon"> EXAM REPORTS</div><br></a>
             </div>
             <div class="col-sm-10">
                 <div class="page-title">

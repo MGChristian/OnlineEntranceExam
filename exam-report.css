@@ -60,6 +60,7 @@
 }
 
 .additional-info{
+    margin-top:10px;
     display:flex;
     width:100%;
 }
@@ -72,7 +73,6 @@
     margin:5px;
     display:flex;
     align-items: center;
-    height:70px;
     border:1px solid #D9D9D9;
     padding:5px;
 }
